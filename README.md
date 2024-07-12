@@ -18,7 +18,7 @@ Following are screenshots from the project:
 
 4)Attendance Dashboard:
 
-![Screenshot (390)](https://github.com/user-attachments/assets/4f8d732b-339f-4f09-a32c-1bffcc37625e)
+![image](https://github.com/user-attachments/assets/19088320-4ecb-4193-ac97-5d97b634a42a)
 
 5)Attendance Report:
 
