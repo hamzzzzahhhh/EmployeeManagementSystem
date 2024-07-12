@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Employee Check-In</h2>
+    
+    <div class="employee-selection">
+      <h3>Select Employee</h3>
+      <select [(ngModel)]="selectedEmployee" class="employee-select">
+        <option *ngFor="let employee of employees" [ngValue]="employee">
+          <!-- {{ employee.employeeId }} - {{ employee.name }} -->
+            {{employee.name}}
+        </option>
+      </select>
+    </div>
+  
+    <div class="actions">
+      <button (click)="CheckIn()" class="action-button">Check In</button>
+      <button (click)="CheckOut()" class="action-button">Check Out</button>
+    </div>
+  </div>
+  

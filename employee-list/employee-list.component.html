@@ -1,0 +1,42 @@
+
+<h3>Add/Edit Employee</h3>
+
+<div class="employeeform">
+
+    <form (ngSubmit) = "onFormSubmit()" [formGroup] = "employeeForm">
+
+        <div>
+            <label for="name">Name </label>
+            <input type="text" formControlName="name">
+        </div>
+
+        <div>
+            <label for="name">ID </label>
+            <input type="text" formControlName="id">
+
+        </div>
+
+        <div>
+            <label for="name">Department </label>
+            <input type="text" formControlName="department">
+
+        </div>
+
+        <div>
+            <label for="name">Email </label>
+            <input type="text" formControlName="email">
+
+        </div>
+
+        <div>
+            <button type="submit">Save Changes</button>
+        </div>
+
+    </form>
+
+    
+    <div>
+        <button type="button" (click)="onEditEmployee()">Edit Employee Info</button>
+    </div>
+
+</div>
