@@ -28,4 +28,9 @@ Following are screenshots from the project:
 
 ![Screenshot (400)](https://github.com/user-attachments/assets/bfd71bf2-d852-4fe0-9339-a3a52d303a73)
 
+7)CMD-Git-Github:
+
+![image](https://github.com/user-attachments/assets/b0952e1c-310a-49c4-ac87-3ce0fd21fd8b)
+
+
 Thank you.
