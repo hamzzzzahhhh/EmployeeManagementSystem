@@ -1,0 +1,43 @@
+<div class="container">
+    <h2>Attendance Report</h2>
+    
+    <div class="filters">
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" [(ngModel)]="startDate" name="startDate" required>
+      
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" [(ngModel)]="endDate" name="endDate" required>
+      
+      <label for="department">Department:</label>
+      <input type="text" id="department" [(ngModel)]="department" name="department" required>
+      
+      <button (click)="getAttendanceData()">Get Attendance Data</button>
+    </div>
+  
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Employee Name</th>
+            <th>Department</th>
+            <th>Date</th>
+            <th>Check-In Time</th>
+            <th>Check-Out Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of attendanceData">
+            <td>{{ record.employeeName }}</td>
+            <td>{{ record.department }}</td>
+            <td>{{ record.date | date }}</td>
+            <td>{{ record.checkInTime | date:'shortTime' }}</td>
+            <td>{{ record.checkOutTime | date:'shortTime' }}</td>
+          </tr>
+          <tr *ngIf="attendanceData.length === 0">
+            <td colspan="5" class="no-data">No attendance records found.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
